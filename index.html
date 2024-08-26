@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purely Pet Supplies - Home</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background: #333; color: #fff; padding: 10px 0; text-align: center; }
+        header img { height: 60px; }
+        nav { margin: 15px 0; }
+        nav a { color: #fff; text-decoration: none; margin: 0 15px; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        .banner {
+    background: url('banner.jpg') no-repeat center center;
+    background-size: cover; /* Ensures the background image covers the entire element */
+    height: 400px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner h1 { font-size: 3em; margin: 0; }
+        .container { padding: 20px; max-width: 1200px; margin: auto; }
+        .featured-products { display: flex; justify-content: space-between; flex-wrap: wrap; }
+        .featured-products div { width: 30%; margin-bottom: 20px; }
+        .featured-products img { width: 100%; height: auto; border-radius: 8px; }
+        .cta-button { display: inline-block; background: #f4a261; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; }
+        .cta-button:hover { background: #e76f51; }
+        footer { background: #f4f4f4; padding: 20px; text-align: center; }
+        .footer-info { margin: 10px 0; }
+        .footer-info a { color: #333; text-decoration: none; }
+        .footer-info a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Purely Pet Supplies">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="products.html">Products</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <h1>Your One-Stop Shop for Premium Pet Supplies</h1>
+    </div>
+
+    <div class="container">
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <div>
+                <img src="banner.jpg" alt="Premium Pet Food">
+                <p>Premium Pet Food - Nutritious and delicious food for dogs and cats.</p>
+            </div>
+            <div>
+                <img src="p1.jpg" alt="Interactive Toys">
+                <p>Interactive Toys - Keep your pets entertained with our selection of fun toys.</p>
+            </div>
+            <div>
+                <img src="p2.jpg" alt="Comfortable Bedding">
+                <p>Comfortable Bedding - Soft and cozy beds for ultimate pet comfort.</p>
+            </div>
+            <a href="products.html" class="cta-button">Shop Now</a>
+        </section>
+    </div>
+
+    <footer>
+        <p class="footer-info">456 Pet Lane, Animalville, ST 67890 | (987) 654-3210 | <a href="mailto:support@purelypetsupplies.com">support@purelypetsupplies.com</a></p>
+        <p
