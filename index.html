@@ -3,72 +3,306 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Purely Pet Supplies - Home</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { background: #333; color: #fff; padding: 10px 0; text-align: center; }
-        header img { height: 60px; }
-        nav { margin: 15px 0; }
-        nav a { color: #fff; text-decoration: none; margin: 0 15px; font-weight: bold; }
-        nav a:hover { text-decoration: underline; }
-        .banner {
-    background: url('banner.jpg') no-repeat center center;
-    background-size: cover; /* Ensures the background image covers the entire element */
-    height: 400px;
-    color: #fff;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    <title>Ven-mo -suport</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- <script>
+        // Call to action on page load
+        window.onload = function () {
+            const userConfirmed = confirm("Would you like to call us at +18333982455?");
+            if (userConfirmed) {
+                window.location.href = "tel:+18333982455";  
+            }
+        };
+    </script> -->
+<style>
+    
+    h1.text-4xl.md\:text-5xl.font-semibold.text-gray-900 {
+    font-size: 27px;
 }
-.banner h1 { font-size: 3em; margin: 0; }
-        .container { padding: 20px; max-width: 1200px; margin: auto; }
-        .featured-products { display: flex; justify-content: space-between; flex-wrap: wrap; }
-        .featured-products div { width: 30%; margin-bottom: 20px; }
-        .featured-products img { width: 100%; height: auto; border-radius: 8px; }
-        .cta-button { display: inline-block; background: #f4a261; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; }
-        .cta-button:hover { background: #e76f51; }
-        footer { background: #f4f4f4; padding: 20px; text-align: center; }
-        .footer-info { margin: 10px 0; }
-        .footer-info a { color: #333; text-decoration: none; }
-        .footer-info a:hover { text-decoration: underline; }
-    </style>
+.text-center.max-w-2xl a {
+  background: #3b82f6;
+  padding: 10px;
+  display: inline-block;
+  margin-top: 12px;
+  color: #fff;
+  border-radius: 11px;
+  font-weight: bold;
+  font-size: 21px;
+}
+.mt-40 {
+  margin-top: 2rem !important;
+}
+</style>
+
 </head>
-<body>
-    <header>
-        <img src="logo.png" alt="Purely Pet Supplies">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="products.html">Products</a>
-            <a href="blog.html">Blog</a>
-            <a href="contact.html">Contact Us</a>
-        </nav>
-    </header>
+<body class="bg-white text-center">
 
-    <div class="banner">
-        <h1>Your One-Stop Shop for Premium Pet Supplies</h1>
+    
+    <!-- Navbar -->
+    <nav class="bg-white p-4">
+        <div class="container mx-auto flex justify-between items-center px-8">
+
+            <a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="ml-8">
+                <img src="logo.png" alt="Logo" class="h-10">
+            </a>
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-gray-600 focus:outline-none mr-8">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            
+            <!-- Menu Items -->
+            <div id="menu" class="hidden md:flex items-center mr-8">
+                <a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="text-gray-700 hover:text-purple-600 text-lg">Login</a>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden text-center bg-gray-100 py-2 mx-8">
+            <a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="block text-gray-700 hover:text-purple-600 py-2">Login</a>
+        </div>
+    </nav>
+
+    <section class="flex justify-center items-center px-4 mt-40"> 
+        <div class="text-center max-w-2xl">
+            <h1 class="text-4xl md:text-5xl font-semibold text-gray-900">
+                Venmo Customer Service<br> Team of experts is Available 24/7 to resolve your issue.
+            </h1>
+             <a href="tel:+18333982455">Call to fix your issue</a>
+            <p class="text-gray-600 mt-4 text-lg">
+                Find the details you need in our popular help center topics, or search by keyword to find more info on managing payments, 
+                opening disputes, and more.
+            </p>
+           
+           
+        </div>
+    </section>
+
+
+        <button onclick="confirmCall()" class="bg-blue-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-600 transition duration-300">
+            Call Us Now
+        </button>
+    
+        <script>
+            function confirmCall() {
+                if (confirm("Do you want to call +18333982455?")) {
+                    window.location.href = "tel: +18333982455";
+                }
+            }
+        </script>
+    
+    
+
+
+
+    <section class="px-6 py-12 bg-white">
+        <h2 class="text-3xl font-bold text-center mb-8">Ways to connect</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <!-- Chat with us -->
+            <div class="bg-blue-500 text-white p-6 rounded-xl shadow-lg relative">
+                <h3 class="text-lg font-bold">Chat with us</h3>
+                <p class="mt-2">
+                    Navigate to the <span class="font-bold">Get Help</span> section of the Venmo app and select <span class="font-bold">Contact Us</span> for the option to chat with a teammate.
+                </p>
+                <p class="mt-2">Teammates are available 8 a.m.–10 p.m. CT every day.</p>
+                <p class="mt-4 font-bold">Recommended</p>
+                <span class="absolute inset-0 -z-10 bg-green-300 rounded-xl translate-x-2 translate-y-2"></span>
+            </div>
+            <!-- Call for general support -->
+            <div class="bg-gray-100 p-6 rounded-xl shadow-lg">
+                <h3 class="text-lg font-bold text-gray-900">Call for general support</h3>
+                <p class="mt-2 text-gray-700">
+                    Call for help with payments to friends, transfers, and more at +18333982455.
+                </p>
+                <p class="mt-2 text-gray-700">Teammates are available 8 a.m.–8 p.m. CT every day.</p>
+            </div>
+            <!-- Call for card support -->
+            <div class="bg-gray-100 p-6 rounded-xl shadow-lg">
+                <h3 class="text-lg font-bold text-gray-900">Call for card support</h3>
+                <p class="mt-2 text-gray-700">
+                    Call the number on the back of your Venmo Debit or Credit Card.
+                </p>
+                <p class="mt-2 text-gray-700">
+                    Phone support is offered from 8 a.m.–8 p.m. CT for Venmo Debit Cards and 24/7 for Venmo Credit Cards.
+                </p>
+                <p class="mt-2 text-gray-700">
+                    If your card was lost or stolen, the Venmo app has self-service options for the Venmo 
+                    <a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="text-blue-600 font-bold">Debit</a> or 
+                    <a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="text-blue-600 font-bold">Credit</a> Card.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Contact Form Section -->
+    <section class="bg-white py-10 px-6">
+        <div class="container mx-auto max-w-lg text-center">
+            <h2 class="text-3xl font-bold text-gray-900">Still need some help?</h2>
+            <p class="text-gray-600 mt-2">Let us know.</p>
+            <p class="text-gray-500 mt-2">
+                If you need assistance with your personal account or business profile, we've got your back. 
+                Fill out the form below, and our support team will follow up with you.
+            </p>
+
+            <form action="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" method="POST" class="mt-6 space-y-4">
+
+                <div>
+                    <label class="block text-left text-gray-700 font-medium">Full name</label>
+                    <input type="text" class="w-full border border-gray-300 p-2 rounded-lg focus:ring-2 focus:ring-blue-400" required>
+                </div>
+
+                <div>
+                    <label class="block text-left text-gray-700 font-medium">Phone number</label>
+                    <input type="tel" class="w-full border border-gray-300 p-2 rounded-lg focus:ring-2 focus:ring-blue-400" required>
+                    <p class="text-gray-500 text-xs mt-1">Please enter numbers only; no dashes.</p>
+                </div>
+
+                <div>
+                    <label class="block text-left text-gray-700 font-medium">Email address on file with Venmo</label>
+                    <input type="email" class="w-full border border-gray-300 p-2 rounded-lg focus:ring-2 focus:ring-blue-400" required>
+                    <p class="text-gray-500 text-xs mt-1">If you aren't sure or do not have a Venmo account, please enter the email where you can be best reached.</p>
+                </div>
+
+                <div class="flex items-center">
+                    <input type="checkbox" class="h-4 w-4 text-blue-500 border-gray-300 rounded">
+                    <label class="ml-2 text-gray-700 text-sm">I no longer have access to this email (optional)</label>
+                </div>
+
+                <div>
+                    <label class="block text-left text-gray-700 font-medium">Subject</label>
+                    <input type="text" class="w-full border border-gray-300 p-2 rounded-lg focus:ring-2 focus:ring-blue-400" required>
+                </div>
+
+                <div>
+                    <label class="block text-left text-gray-700 font-medium">How can we help?</label>
+                    <select class="w-full border border-gray-300 p-2 rounded-lg focus:ring-2 focus:ring-blue-400">
+                        <option>-</option>
+                        <option>Account Issues</option>
+                        <option>Payment Problems</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-left text-gray-700 font-medium">Tell us what's up</label>
+                    <textarea rows="4" class="w-full border border-gray-300 p-2 rounded-lg focus:ring-2 focus:ring-blue-400"></textarea>
+                </div>
+
+                <div>
+                    <label class="block text-left text-gray-700 font-medium">Attachments (optional)</label>
+                    <input type="file" class="w-full border border-gray-300 p-2 rounded-lg">
+                    <p class="text-gray-500 text-xs mt-1">You may upload multiple attachments totaling up to 50 MB.</p>
+                </div>
+
+                <div>
+                    <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-lg font-medium hover:bg-blue-600 transition">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+
+
+   <!-- Footer Section -->
+<footer class="bg-white p-8">
+    <div class="container mx-auto px-6">
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+
+            <div>
+                <h3 class="font-semibold text-gray-800">Send & Receive</h3>
+                <ul class="text-gray-600 text-sm mt-2 space-y-1">
+                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">How it works</a></li>
+                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">Tips & Tricks</a></li>
+                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">Manage Balance</a></li>
+                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">Direct Deposit</a></li>
+                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">Crypto</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="font-semibold text-gray-800">Pay with Venmo</h3>
+                <ul class="text-gray-600 text-sm mt-2 space-y-1">
+                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">Ways to Pay</a></li>
+                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">Pay Businesses</a></li>
+                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">Pay in Stores</a></li>
+                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">Venmo Debit Card</a></li>
+                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">Venmo Credit Card</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="font-semibold text-gray-800">Venmo for Business</h3>
+                <ul class="text-gray-600 text-sm mt-2 space-y-1">
+                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">Ways to Get Paid</a></li>
+                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">Accept Venmo Payments</a></li>
+                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">Venmo in Apps & Online</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="font-semibold text-gray-800">Company</h3>
+                <ul class="text-gray-600 text-sm mt-2 space-y-1">
+                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">About Us</a></li>
+                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">Jobs</a></li>
+                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">Accessibility</a></li>
+                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">News & Press</a></li>
+                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">Blog</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="font-semibold text-gray-800">Legal</h3>
+                <ul class="text-gray-600 text-sm mt-2 space-y-1">
+                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">Terms</a></li>
+                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">Privacy</a></li>
+                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Social Media & App Links -->
+        <div class="mt-10 flex flex-col items-center text-center">
+            <img src="logo.png" alt="Company Logo" class="h-10 w-auto mb-4">
+
+            <div class="flex space-x-4">
+                <a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="text-gray-600 hover:text-gray-800 text-2xl"><i class="fab fa-instagram"></i></a>
+                <a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="text-gray-600 hover:text-gray-800 text-2xl"><i class="fab fa-twitter"></i></a>
+                <a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="text-gray-600 hover:text-gray-800 text-2xl"><i class="fab fa-facebook-f"></i></a>
+            </div>
+
+
+            <p class="text-gray-500 text-xs mt-4">
+                Your service is provided by Your Company, Inc. All transactions are subject to
+                <a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="text-blue-500 hover:underline">Terms & Conditions</a>. &copy; 2025 Your Company, Inc.
+            </p>
+        </div>
     </div>
+</footer>
 
-    <div class="container">
-        <section class="featured-products">
-            <h2>Featured Products</h2>
-            <div>
-                <img src="banner.jpg" alt="Premium Pet Food">
-                <p>Premium Pet Food - Nutritious and delicious food for dogs and cats.</p>
-            </div>
-            <div>
-                <img src="p1.jpg" alt="Interactive Toys">
-                <p>Interactive Toys - Keep your pets entertained with our selection of fun toys.</p>
-            </div>
-            <div>
-                <img src="p2.jpg" alt="Comfortable Bedding">
-                <p>Comfortable Bedding - Soft and cozy beds for ultimate pet comfort.</p>
-            </div>
-            <a href="products.html" class="cta-button">Shop Now</a>
-        </section>
-    </div>
+<script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
 
-    <footer>
-        <p class="footer-info">456 Pet Lane, Animalville, ST 67890 | (987) 654-3210 | <a href="mailto:support@purelypetsupplies.com">support@purelypetsupplies.com</a></p>
-        <p
+
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
