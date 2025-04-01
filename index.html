@@ -1,308 +1,140 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ven-mo -suport</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-
-
-    <!-- <script>
-        // Call to action on page load
-        window.onload = function () {
-            const userConfirmed = confirm("Would you like to call us at +18333982455?");
-            if (userConfirmed) {
-                window.location.href = "tel:+18333982455";  
-            }
-        };
-    </script> -->
-<style>
-    
-    h1.text-4xl.md\:text-5xl.font-semibold.text-gray-900 {
-    font-size: 27px;
-}
-.text-center.max-w-2xl a {
-  background: #3b82f6;
-  padding: 10px;
-  display: inline-block;
-  margin-top: 12px;
-  color: #fff;
-  border-radius: 11px;
-  font-weight: bold;
-  font-size: 21px;
-}
-.mt-40 {
-  margin-top: 2rem !important;
-}
-</style>
-
-</head>
-<body class="bg-white text-center">
-
-    
-    <!-- Navbar -->
-    <nav class="bg-white p-4">
-        <div class="container mx-auto flex justify-between items-center px-8">
-
-            <a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="ml-8">
-                <img src="logo.png" alt="Logo" class="h-10">
-            </a>
-            <!-- Mobile Menu Button -->
-            <button id="menu-btn" class="md:hidden text-gray-600 focus:outline-none mr-8">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
-            
-            <!-- Menu Items -->
-            <div id="menu" class="hidden md:flex items-center mr-8">
-                <a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="text-gray-700 hover:text-purple-600 text-lg">Login</a>
-            </div>
-        </div>
-        
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden text-center bg-gray-100 py-2 mx-8">
-            <a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="block text-gray-700 hover:text-purple-600 py-2">Login</a>
-        </div>
-    </nav>
-
-    <section class="flex justify-center items-center px-4 mt-40"> 
-        <div class="text-center max-w-2xl">
-            <h1 class="text-4xl md:text-5xl font-semibold text-gray-900">
-                Venmo Customer Service<br> Team of experts is Available 24/7 to resolve your issue.
-            </h1>
-             <a href="tel:+18333982455">Call to fix your issue</a>
-            <p class="text-gray-600 mt-4 text-lg">
-                Find the details you need in our popular help center topics, or search by keyword to find more info on managing payments, 
-                opening disputes, and more.
-            </p>
-           
-           
-        </div>
-    </section>
-
-
-        <button onclick="confirmCall()" class="bg-blue-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-600 transition duration-300">
-            Call Us Now
-        </button>
-    
-        <script>
-            function confirmCall() {
-                if (confirm("Do you want to call +18333982455?")) {
-                    window.location.href = "tel: +18333982455";
-                }
+    <head>
+        <meta charset="utf-8"/>
+        <!-- <link rel="icon" href="./favicon.png" /> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link href="./_app/immutable/assets/0.jMH1PVh3.css" rel="stylesheet">
+        <!-- HEAD_svelte-1pa505f_START -->
+        <script data-svelte-h="svelte-mp99qu">
+            if ('color-theme'in localStorage) {
+                // explicit preference - overrides author's choice
+                localStorage.getItem('color-theme') === 'dark' ? window.document.documentElement.classList.add('dark') : window.document.documentElement.classList.remove('dark');
+            } else {
+                // browser preference - does not overrides
+                if (window.matchMedia('(prefers-color-scheme: dark)').matches)
+                    window.document.documentElement.classList.add('dark');
             }
         </script>
-    
-    
-
-
-
-    <section class="px-6 py-12 bg-white">
-        <h2 class="text-3xl font-bold text-center mb-8">Ways to connect</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <!-- Chat with us -->
-            <div class="bg-blue-500 text-white p-6 rounded-xl shadow-lg relative">
-                <h3 class="text-lg font-bold">Chat with us</h3>
-                <p class="mt-2">
-                    Navigate to the <span class="font-bold">Get Help</span> section of the Venmo app and select <span class="font-bold">Contact Us</span> for the option to chat with a teammate.
-                </p>
-                <p class="mt-2">Teammates are available 8 a.m.–10 p.m. CT every day.</p>
-                <p class="mt-4 font-bold">Recommended</p>
-                <span class="absolute inset-0 -z-10 bg-green-300 rounded-xl translate-x-2 translate-y-2"></span>
+        <!-- HEAD_svelte-1pa505f_END -->
+    </head>
+    <body data-sveltekit-preload-data="hover" class="bg-white dark:bg-gray-800">
+        <div style="display: contents">
+            <div>
+                <center>
+                    <nav>
+                        <div>
+                            <nav class="bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-200 border-gray-100 dark:border-gray-700 divide-gray-100 dark:divide-gray-700 px-2 sm:px-4 py-2.5 w-full">
+                                <div class="mx-auto flex flex-wrap justify-between items-center container">
+                                    <div class="mx-auto flex flex-wrap justify-between items-center container border px-5 py-2 rounded-lg bg-white dark:bg-gray-600">
+                                        <a href="/" class="flex items-center">
+                                            <img src="/_app/immutable/assets/printerbench.BtKKCU5w.svg" class="me-6 h-12 sm:h-15" alt="PrinterBench Logo">
+                                            <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white" data-svelte-h="svelte-1dv17gq">PrinterBench</span>
+                                        </a>
+                                        <div class="flex md:order-2">
+                                            <button aria-label="Dark mode" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none rounded-lg text-sm p-2.5">
+                                                <span class="hidden dark:block">
+                                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1
+  0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+                                                    </svg>
+                                                </span>
+                                                <span class="block dark:hidden">
+                                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                            <div style="cursor:pointer">
+                                                <div class="relative flex justify-center items-center rounded w-10 h-10 bg-gray-100 dark:bg-gray-600 text-gray-600 dark:text-gray-300">
+                                                    <svg class="w-full h-full rounded" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" d="M8 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+                                                    </svg>
+                                                </div>
+                                                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 10 4 4 4-4"></path>
+                                                </svg>
+                                            </div>
+                                            <div></div>
+                                            <button type="button" class="focus:outline-none whitespace-normal m-0.5 rounded-lg focus:ring-2 p-1.5 focus:ring-gray-400 hover:bg-gray-100 dark:hover:bg-gray-600 ms-3 md:hidden" aria-label="Open main menu">
+                                                <span class="sr-only">Open main menu</span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" role="button" tabindex="0" width="24" height="24" class="h-6 w-6 shrink-0" aria-label="bars 3" fill="none" viewBox="0 0 24 24" stroke-width="2">
+                                                    <!-- HTML_TAG_START -->
+                                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                                                    <!-- HTML_TAG_END -->
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="w-full md:block md:w-auto order-1" hidden>
+                                            <ul class="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:text-sm md:font-medium">
+                                                <li>
+                                                    <a href="/leaderboard" class="block py-2 pe-4 ps-3 md:p-0 rounded text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-700 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">LeaderBoard</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/add" class="block py-2 pe-4 ps-3 md:p-0 rounded text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-700 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Add Printer</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/compare" class="block py-2 pe-4 ps-3 md:p-0 rounded text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-700 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Compare</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/survey" class="block py-2 pe-4 ps-3 md:p-0 rounded text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-700 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Survey</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </nav>
+                    <div>
+                        <img src="/_app/immutable/assets/printerbench.BtKKCU5w.svg" style="display:inline-block; width:10vw; height:10vw" alt="PrinterBench Logo">
+                        <p style="display:inline-block;" class="text-5xl text-gray-900 dark:text-white leading-normal font-normal text-center whitespace-normal">PrinterBench</p>
+                        <p class="text-2xl text-gray-900 dark:text-white leading-normal font-normal text-center whitespace-normal">Making picking a printer easy</p>
+                        <div>
+                            <a href="/add" style="margin:10px;display:inline-block;height:10vh;vertical-align:top;" class="bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 rounded-lg border border-gray-200 dark:border-gray-700 divide-gray-200 dark:divide-gray-700 shadow-md flex w-full max-w-sm flex-col hover:bg-gray-100 dark:hover:bg-gray-700 p-4 sm:p-6">
+                                <p class="text-xl text-gray-900 dark:text-white leading-normal font-normal text-center whitespace-normal">Add Printer</p>
+                                <p class="text-base text-gray-900 dark:text-white leading-normal font-normal text-center whitespace-normal">help contribute to the database with a simple form</p>
+                            </a>
+                            <a href="/leaderboard" style="margin:10px;display:inline-block;height:10vh;vertical-align:top;" class="bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 rounded-lg border border-gray-200 dark:border-gray-700 divide-gray-200 dark:divide-gray-700 shadow-md flex w-full max-w-sm flex-col hover:bg-gray-100 dark:hover:bg-gray-700 p-4 sm:p-6">
+                                <p class="text-xl text-gray-900 dark:text-white leading-normal font-normal text-center whitespace-normal">Leaderboard</p>
+                                <p class="text-base text-gray-900 dark:text-white leading-normal font-normal text-center whitespace-normal">See the top or see where your printer stands</p>
+                            </a>
+                            <a href="/leaderboard" style="margin:10px;display:inline-block;height:10vh;vertical-align:top;" class="bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 rounded-lg border border-gray-200 dark:border-gray-700 divide-gray-200 dark:divide-gray-700 shadow-md flex w-full max-w-sm flex-col hover:bg-gray-100 dark:hover:bg-gray-700 p-4 sm:p-6">
+                                <p class="text-xl text-gray-900 dark:text-white leading-normal font-normal text-center whitespace-normal">Add Reviews</p>
+                                <p class="text-base text-gray-900 dark:text-white leading-normal font-normal text-center whitespace-normal">Look for your Printer and Add a Review</p>
+                            </a>
+                            <a href="/survey" style="margin:10px;display:inline-block;height:10vh;vertical-align:top;" class="bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 rounded-lg border border-gray-200 dark:border-gray-700 divide-gray-200 dark:divide-gray-700 shadow-md flex w-full max-w-sm flex-col hover:bg-gray-100 dark:hover:bg-gray-700 p-4 sm:p-6">
+                                <p class="text-xl text-gray-900 dark:text-white leading-normal font-normal text-center whitespace-normal">Find Which Printer is Right for You</p>
+                                <p class="text-base text-gray-900 dark:text-white leading-normal font-normal text-center whitespace-normal">Just answer the simple survey</p>
+                            </a>
+                        </div>
+                    </div>
+                    <footer class="">
+                        <a href="https://github.com/GuySandler/PrinterBench-V3/" target="_blank" align="center" class="text-center font-medium focus-within:ring-4 focus-within:outline-none inline-flex items-center justify-center px-5 py-2.5 text-sm text-gray-900 bg-white border border-gray-200 hover:bg-gray-100 dark:text-gray-400 hover:text-primary-700 focus-within:text-primary-700 dark:focus-within:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:bg-transparent dark:border-gray-600 dark:hover:border-gray-600 focus-within:ring-gray-200 dark:focus-within:ring-gray-700 rounded-lg" role="button">Github</a>
+                    </footer>
+                </center>
             </div>
-            <!-- Call for general support -->
-            <div class="bg-gray-100 p-6 rounded-xl shadow-lg">
-                <h3 class="text-lg font-bold text-gray-900">Call for general support</h3>
-                <p class="mt-2 text-gray-700">
-                    Call for help with payments to friends, transfers, and more at +18333982455.
-                </p>
-                <p class="mt-2 text-gray-700">Teammates are available 8 a.m.–8 p.m. CT every day.</p>
-            </div>
-            <!-- Call for card support -->
-            <div class="bg-gray-100 p-6 rounded-xl shadow-lg">
-                <h3 class="text-lg font-bold text-gray-900">Call for card support</h3>
-                <p class="mt-2 text-gray-700">
-                    Call the number on the back of your Venmo Debit or Credit Card.
-                </p>
-                <p class="mt-2 text-gray-700">
-                    Phone support is offered from 8 a.m.–8 p.m. CT for Venmo Debit Cards and 24/7 for Venmo Credit Cards.
-                </p>
-                <p class="mt-2 text-gray-700">
-                    If your card was lost or stolen, the Venmo app has self-service options for the Venmo 
-                    <a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="text-blue-600 font-bold">Debit</a> or 
-                    <a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="text-blue-600 font-bold">Credit</a> Card.
-                </p>
-            </div>
+            <script>
+                {
+                    __sveltekit_1bi83sk = {
+                        base: new URL(".",location).pathname.slice(0, -1)
+                    };
+
+                    const element = document.currentScript.parentElement;
+
+                    const data = [null, null];
+
+                    Promise.all([import("./_app/immutable/entry/start.FXLicQEn.js"), import("./_app/immutable/entry/app.L3M91Voa.js")]).then( ([kit,app]) => {
+                        kit.start(app, element, {
+                            node_ids: [0, 2],
+                            data,
+                            form: null,
+                            error: null
+                        });
+                    }
+                    );
+                }
+            </script>
         </div>
-    </section>
-
-
-
-
-    <!-- Contact Form Section -->
-    <section class="bg-white py-10 px-6">
-        <div class="container mx-auto max-w-lg text-center">
-            <h2 class="text-3xl font-bold text-gray-900">Still need some help?</h2>
-            <p class="text-gray-600 mt-2">Let us know.</p>
-            <p class="text-gray-500 mt-2">
-                If you need assistance with your personal account or business profile, we've got your back. 
-                Fill out the form below, and our support team will follow up with you.
-            </p>
-
-            <form action="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" method="POST" class="mt-6 space-y-4">
-
-                <div>
-                    <label class="block text-left text-gray-700 font-medium">Full name</label>
-                    <input type="text" class="w-full border border-gray-300 p-2 rounded-lg focus:ring-2 focus:ring-blue-400" required>
-                </div>
-
-                <div>
-                    <label class="block text-left text-gray-700 font-medium">Phone number</label>
-                    <input type="tel" class="w-full border border-gray-300 p-2 rounded-lg focus:ring-2 focus:ring-blue-400" required>
-                    <p class="text-gray-500 text-xs mt-1">Please enter numbers only; no dashes.</p>
-                </div>
-
-                <div>
-                    <label class="block text-left text-gray-700 font-medium">Email address on file with Venmo</label>
-                    <input type="email" class="w-full border border-gray-300 p-2 rounded-lg focus:ring-2 focus:ring-blue-400" required>
-                    <p class="text-gray-500 text-xs mt-1">If you aren't sure or do not have a Venmo account, please enter the email where you can be best reached.</p>
-                </div>
-
-                <div class="flex items-center">
-                    <input type="checkbox" class="h-4 w-4 text-blue-500 border-gray-300 rounded">
-                    <label class="ml-2 text-gray-700 text-sm">I no longer have access to this email (optional)</label>
-                </div>
-
-                <div>
-                    <label class="block text-left text-gray-700 font-medium">Subject</label>
-                    <input type="text" class="w-full border border-gray-300 p-2 rounded-lg focus:ring-2 focus:ring-blue-400" required>
-                </div>
-
-                <div>
-                    <label class="block text-left text-gray-700 font-medium">How can we help?</label>
-                    <select class="w-full border border-gray-300 p-2 rounded-lg focus:ring-2 focus:ring-blue-400">
-                        <option>-</option>
-                        <option>Account Issues</option>
-                        <option>Payment Problems</option>
-                        <option>Other</option>
-                    </select>
-                </div>
-
-                <div>
-                    <label class="block text-left text-gray-700 font-medium">Tell us what's up</label>
-                    <textarea rows="4" class="w-full border border-gray-300 p-2 rounded-lg focus:ring-2 focus:ring-blue-400"></textarea>
-                </div>
-
-                <div>
-                    <label class="block text-left text-gray-700 font-medium">Attachments (optional)</label>
-                    <input type="file" class="w-full border border-gray-300 p-2 rounded-lg">
-                    <p class="text-gray-500 text-xs mt-1">You may upload multiple attachments totaling up to 50 MB.</p>
-                </div>
-
-                <div>
-                    <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-lg font-medium hover:bg-blue-600 transition">
-                        Submit
-                    </button>
-                </div>
-            </form>
-        </div>
-    </section>
-
-
-
-
-
-
-
-   <!-- Footer Section -->
-<footer class="bg-white p-8">
-    <div class="container mx-auto px-6">
-
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-
-            <div>
-                <h3 class="font-semibold text-gray-800">Send & Receive</h3>
-                <ul class="text-gray-600 text-sm mt-2 space-y-1">
-                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">How it works</a></li>
-                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">Tips & Tricks</a></li>
-                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">Manage Balance</a></li>
-                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">Direct Deposit</a></li>
-                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">Crypto</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h3 class="font-semibold text-gray-800">Pay with Venmo</h3>
-                <ul class="text-gray-600 text-sm mt-2 space-y-1">
-                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">Ways to Pay</a></li>
-                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">Pay Businesses</a></li>
-                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">Pay in Stores</a></li>
-                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">Venmo Debit Card</a></li>
-                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">Venmo Credit Card</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h3 class="font-semibold text-gray-800">Venmo for Business</h3>
-                <ul class="text-gray-600 text-sm mt-2 space-y-1">
-                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">Ways to Get Paid</a></li>
-                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">Accept Venmo Payments</a></li>
-                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">Venmo in Apps & Online</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h3 class="font-semibold text-gray-800">Company</h3>
-                <ul class="text-gray-600 text-sm mt-2 space-y-1">
-                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">About Us</a></li>
-                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">Jobs</a></li>
-                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">Accessibility</a></li>
-                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">News & Press</a></li>
-                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">Blog</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h3 class="font-semibold text-gray-800">Legal</h3>
-                <ul class="text-gray-600 text-sm mt-2 space-y-1">
-                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">Terms</a></li>
-                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">Privacy</a></li>
-                    <li><a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="hover:underline">Cookies</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Social Media & App Links -->
-        <div class="mt-10 flex flex-col items-center text-center">
-            <img src="logo.png" alt="Company Logo" class="h-10 w-auto mb-4">
-
-            <div class="flex space-x-4">
-                <a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="text-gray-600 hover:text-gray-800 text-2xl"><i class="fab fa-instagram"></i></a>
-                <a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="text-gray-600 hover:text-gray-800 text-2xl"><i class="fab fa-twitter"></i></a>
-                <a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="text-gray-600 hover:text-gray-800 text-2xl"><i class="fab fa-facebook-f"></i></a>
-            </div>
-
-
-            <p class="text-gray-500 text-xs mt-4">
-                Your service is provided by Your Company, Inc. All transactions are subject to
-                <a href="index.html%3Fgad_source=1&amp;gbraid=0AAAAA_BGhn5iPprKLaVvPuHEit0p7Mv1u&amp;gclid=EAIaIQobChMIv4zzjNabjAMV1tAWBR2JPSv8EAAYASAAEgJrhfD_BwE.html#" class="text-blue-500 hover:underline">Terms & Conditions</a>. &copy; 2025 Your Company, Inc.
-            </p>
-        </div>
-    </div>
-</footer>
-
-<script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
-
-
-
-    <script>
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-    </script>
-</body>
+    </body>
 </html>
